@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>AddAnnonce</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <form #f="ngForm">
+    <ion-label>subject </ion-label>
+    <ion-input ngModel name="subject" type="text"></ion-input>
+    <ion-select label="categorie" ngModel name="categorie" placeholder="Select categorie">
+      <ion-select-option value="1">Categorie 1</ion-select-option>
+      <ion-select-option value="2">Categorie 2</ion-select-option>
+    </ion-select>
+   
+    <ion-button (click)="onSubmit(f.value)" color="success" expand="block"
+      >Add</ion-button
+    >
+  </form>
+  
+</ion-content>

@@ -1,0 +1,57 @@
+/* In your component's SCSS file or global CSS */
+.ion-header {
+    border: 1px solid #ccc;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text content */
+  
+    .custom-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #007BFF; /* Add a color for the title */
+    }
+  
+    .custom-announce-title {
+      font-size: 18px;
+      margin-top: 10px; /* Add spacing between title and content */
+    }
+  
+    .custom-announce-text {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 10px; /* Add spacing below content */
+    }
+  }
+  ion-title.title-large {
+    color: #c897d8;
+    font-size: 30px;
+  }
+  
+  ion-title {
+    --color: hsl(59, 87%, 65%);
+    text-align: center;
+    font-size: 30px
+  }
+  
+  ion-toolbar {
+    --background: rgba(52, 164, 250, 0.733);
+  }
+ 
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .custom-card {
+      flex-direction: row;
+    }
+  
+    .custom-announce-title {
+      margin-top: 0; /* Remove spacing between title and content */
+    }
+  
+    .custom-announce-text {
+      margin-bottom: 0; /* Remove spacing below content */
+    }
+  }
+  

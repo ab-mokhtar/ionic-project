@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FireBaseService } from './fire-base.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  user:string="login";
+  constructor(private authervice:FireBaseService) {
+
+  }
+  ngOnInit() {
+ 
+  }
 }
